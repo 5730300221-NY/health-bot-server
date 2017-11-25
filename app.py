@@ -43,7 +43,7 @@ def bot():
         user_detail["age"] = rsp2
         rsp = insertUser(user_detail)"""
 
-    # replyStack.append(rsp1)
+    replyStack.append(rsp1)
     replyStack.append(rsp2)
 
     reply(replyToken, replyStack[:5])

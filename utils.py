@@ -29,4 +29,4 @@ def wit_response(message_text):
     except:
         pass
 
-    return (text,reply)
+    return (resp['_text'],reply)
