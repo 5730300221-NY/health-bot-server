@@ -3,6 +3,7 @@ from flask import Flask, request
 from utils import wit_response
 import json
 import requests
+from cutThai import cutThai
 #from db import doQuery,doInsert
 #from database import docreate,insertUser
 
@@ -43,7 +44,7 @@ def bot():
         user_detail["age"] = rsp2
         rsp = insertUser(user_detail)"""
 
-    replyStack.append(rsp1)
+    replyStack.append(cutThai(text))
     replyStack.append(rsp2)
 
     reply(replyToken, replyStack[:5])
