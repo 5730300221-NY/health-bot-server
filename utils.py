@@ -24,7 +24,7 @@ def wit_response(message_text):
        # entity = list(resp['entities'])
         # value = resp['entities'][entity][0]['value']
        for entity in list(resp['entities']):
-           reply += entity + " : " +  resp['entities'][entity][0]['value']
+           reply += entity + " : " +  resp['entities'][entity][0]['value'] +"\n"
 
     except:
         pass
