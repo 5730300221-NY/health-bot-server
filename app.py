@@ -1,3 +1,4 @@
+# encoding: utf-8
 from flask import Flask, request
 from utils import wit_response
 import json
