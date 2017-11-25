@@ -1,0 +1,8 @@
+table user
+"""CREATE TABLE user_detail (
+                    user_id VARCHAR(100) PRIMARY KEY,
+                    age int NOT NULL,
+                    height float not null,
+                    weight float not null,
+                    bmi float not null)
+                """
